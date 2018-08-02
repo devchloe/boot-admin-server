@@ -10,18 +10,8 @@ eureka:
     hostname: eureka01
     instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
 
-#    enabled: true
-#  instance:
-#    metadata-map:
-#      management.context-path: ${management.context-path}
-#
-#management:
-#  security:
-#    enabled: false
-#  context-path: /management
-
 turbine:
-  appConfig: ORDERS,ITEMS
+  appConfig: ORDERS
   aggregator:
     clusterConfig: default
   clusterNameExpression: new String("default")
